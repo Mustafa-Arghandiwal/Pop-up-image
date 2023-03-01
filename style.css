@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: cursive;
+    margin: 0;
+}
+
+.hover {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1.5rem;
+}
+.down-div {
+    width: 2rem;
+    color: rgb(248, 142, 4);
+    font-size: 1.5rem;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.down-div ion-icon {
+    position: absolute;
+    animation: down 1s infinite;
+}
+@keyframes down {
+    0% {
+        transform: translate(-50%, 0);
+    }
+    50% {
+        transform: translate(-50%, 10px);
+    }
+    100% {
+        transform:translate(-50%, 0);
+    }
+}
+
+.up {
+    box-shadow: 0px 0px 20px black;
+    border-radius: 50%;
+    margin: 0;
+    margin-top: 9px;
+    
+}
+
+
+
+.intro-top-text {
+    font-size: 1rem;
+    margin-top: 0;
+    border-top: 3px solid white;
+}
+.intro-bottom-text {
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+.intro .title h3 {
+    margin-top: 0em;
+}
+.intro .title {
+    text-align: center;
+}
+.intro a {
+    text-decoration: none;
+    color: white;
+}
+.intro a:hover {
+    color: rgb(255, 174, 0);
+}
+.intro {
+    padding: 0 1em; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    background-color: rgb(248, 142, 4);
+    background-image: url("orange-bubbles.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+main {
+    padding: 0 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+}
+main h3 {
+    color: rgb(255, 136, 0);
+    text-shadow: 1px 1px 0px black;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.image-container h3 {
+    margin-top: 0;
+    color: rgb(255, 136, 0);
+    text-align: center;
+
+}
+.name {
+    margin-bottom: 1.2em;
+    width: 100%;
+    padding: .8em;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: .3em;
+}
+#file {
+    display: none;
+}
+form {
+    margin-top: 2rem;
+    width: 60vw ;
+}
+form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.label, .go-btn {
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: .3em;
+    background-color: rgb(248, 142, 4);
+    border-radius: .3em;
+    color: rgba(255, 255, 255, 0.959);
+    flex: 1;
+    width: 100%;
+    margin-bottom: 1.2em;
+
+}
+.label:hover {
+    background-color: rgb(255, 174, 0);
+}
+.label:active {
+    color: black;
+}
+
+.go-btn {
+    font-family: cursive;
+    font-size: 1rem;
+    
+}
+.go-btn:hover {
+    background-color: rgb(255, 174, 0);
+    
+}
+
+.go-btn:active {
+    color: black;
+}
+
+
+
+
+
+
+
+.person {
+    position: relative;
+    max-width: 13rem;
+}
+.person-container {
+    aspect-ratio: 1/1.15;
+    display: grid;
+    align-items: end;
+    border-radius: 0 0 100vw 100vw;
+    overflow: hidden;
+    transition: transform 200ms ease-in-out;
+}
+.person-img {
+    position: relative;
+    z-index: 2;
+    transform: scale(1.4);
+    transition: transform 250ms ease-in-out;
+}
+.person-container:hover {
+    transform: scale(1.05);
+}
+.person-container:hover .person-img {
+    transform: scale(1.5) translateY(-1rem);
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+.person-circle {
+    position: absolute;
+    background-color: rgb(255, 136, 0);
+    display: inline-block;
+    aspect-ratio: 1/1;
+    width: 100%;
+    bottom: 0;
+    inset: auto 0 0;
+    margin-inline: auto;
+    border-radius: 50%;   
+}
+
+
+
+
+
+
+.footer {
+    width: 50vw;
+    text-align: center;
+    color: rgb(248, 142, 4);
+    text-shadow: 1px 0px 1px black;
+    
+}
+.footer span {
+    color: red;
+   
+}
+.footer a {
+color: rgb(255, 136, 0);    
+}
+.footer a:hover {
+    color: blueviolet;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        min-height: 100vh;
+    }
+    .intro .title h1 {
+        font-size: 3.8vw;
+    }
+    .intro .title h3 {
+        font-size: 1.8vw;
+    }
+    .intro {
+
+        width: 25vw;
+        min-width: 15rem;
+        flex-grow: 1;
+    }
+    
+    main {
+        flex-grow: 1;
+    }
+    
+    form {
+        width: 30vw;
+        display: grid;
+        place-items: center;
+    }
+    .label {
+        width: 14vw;
+
+    }
+    form {
+        width: 40vw;
+    }
+    form div {
+        gap: 5em;
+        flex-direction: row;
+    }
+}
