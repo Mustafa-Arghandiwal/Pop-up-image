@@ -12,6 +12,9 @@ body {
     display: flex;
     gap: 1.5rem;
 }
+.hover h2 {
+    margin-top: 3.5rem;
+}
 .down-div {
     width: 2rem;
     color: rgb(248, 142, 4);
@@ -94,7 +97,7 @@ main {
     background-color: whitesmoke;
 }
 main h3 {
-    color: rgb(255, 136, 0);
+    /* color: rgb(255, 136, 0); */
     text-shadow: 1px 1px 0px black;
     text-align: center;
     font-size: 1.3rem;
@@ -134,7 +137,7 @@ form div {
     padding: .3em;
     background-color: rgb(248, 142, 4);
     border-radius: .3em;
-    color: rgba(255, 255, 255, 0.959);
+    color: white;
     flex: 1;
     width: 100%;
     margin-bottom: 1.2em;
@@ -148,7 +151,7 @@ form div {
 }
 
 .go-btn {
-    font-family: cursive;
+    font-family: 'Fuzzy bubbles';
     font-size: 1rem;
     
 }
@@ -215,7 +218,7 @@ img {
 .footer {
     width: 50vw;
     text-align: center;
-    color: rgb(248, 142, 4);
+    /* color: rgb(248, 142, 4); */
     text-shadow: 1px 0px 1px black;
     
 }
